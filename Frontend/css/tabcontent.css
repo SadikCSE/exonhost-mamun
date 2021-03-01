@@ -1,0 +1,246 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+padding:  0;
+margin: 0;
+ 
+ width:100%;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+.spacer {
+    height: 17px;
+    width: 100%;
+    clear: both;
+}
+.shadetabs li{
+	font-size: 15px;
+    font-family: proxima-bold;
+   display: block;
+    margin: 0;
+    width: calc(16.67% - 2px);
+    float: left;
+    border: solid 1px #dadada;
+    border-right: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shadetabs li a,.shadetabs li a:visited,.shadetabs li a:hover {
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0px;
+    margin-right: 0;
+    color: #2d2b2b;
+    display: block;
+    background: #f6f6f6;
+}
+
+ 
+
+.shadetabs li a:hover{
+ background: #ededed;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+ background: #3a4b8c; color:#fff
+}
+
+.shadetabs li a.selected:after{ 
+width: 0;
+    height: 0;
+    z-index: 2;
+    content: " ";
+    display: block;
+    border: 10px solid;
+    border-color: #3a4b8c transparent transparent;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 5px);
+    top: 44px;} 
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+} 
+
+
+.tabcontent{
+display:none;
+}
+li.first a,li.first {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+ li.lastx{border-right:solid 1px #dadada}
+li.lastx, li.lastx a {
+   -webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.flex-grid.vps .onefird, .flex-grid.vps .twhofird  { background-color:#fff; border:0}
+
+.flex-grid.vps {border:solid 1px #d6cece; -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;-webkit-box-shadow: 0px 4px 0px 0px rgba(239,239,239,1);
+-moz-box-shadow: 0px 4px 0px 0px rgba(239,239,239,1);
+box-shadow: 0px 4px 0px 0px rgba(239,239,239,1);}
+.tabcontent {
+    padding: 0 3px;
+}
+/*vps specs*/
+.flex-grid.vps ul {
+   width: 42%;
+    float: left;
+    margin: 20px 2% 10px 2%;
+}
+.flex-grid.vps ul li {
+	background-color: #f3f3f3;
+	background-image: url(../images/ok.png);
+	background-repeat: no-repeat;
+	background-position: 15px 10px;
+	padding-left: 45px;
+	padding-top:10px; padding-bottom:10px;
+	border-bottom: solid 2px #e3e3e3;
+	margin-bottom: 10px;
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.flex-grid.vps .onefird {
+    background-color: #3a4b8c;width: 34%;color:#fff;min-width: 405px
+}
+.twhofird.managed {
+	background-image: url(../images/managedlabel.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.vpsprice {
+ background-color: #1d2a58;  margin:10px auto; -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;     padding: 20px;
+    width: calc(100% - 80px);
+    margin-top: 20px;
+}
+.details{ font-family:proxima-bold; font-size:60px;display: inline-block;
+    padding-top: 20px;}
+.details span{ font-family:proxima-regular; font-size:48px}
+.details i{
+	font-family:proxima-light;
+	font-size:18px;
+	font-style: normal;
+}
+.greenbutton.yellow{ background-color:#e7cf06;display: block;
+    float: right;
+    margin-top: 10px;
+    color: #000;
+    text-transform: uppercase;}
+.greenbutton.yellow:hover{ background-color:#f6dd08}
+.onefird h6 {
+   font-size: 15px;
+    font-weight: normal;
+    margin: 5px 0 0 20px;
+    padding: 0 0 0 22px;
+    background-image: url(../images/loc.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.loc {
+    float: left;
+    width: 25%;
+    padding-left: 6%; padding-top:5px
+}
+.flex-grid.vps hr {
+    padding: 0;
+    margin: 0 auto;
+    width: 88%;
+    height: 1px;
+    background: #525f8f;
+}
+.vpstitle.hide {
+	display: none;
+}
+@media screen and (max-width: 1024px){
+	.vpsprice {
+    margin-bottom: 37px;
+}}
+@media screen and (max-width: 1023px){
+
+.flex-grid.vps ul {
+    width: 90%;
+    float: none;
+    margin: 0px 2% 0px 2%;
+}
+.twhofird.managed {
+    padding: 10px 0 5px 0;
+}}
+@media screen and (max-width: 800px){
+	#vpssolutions {
+    display: none;
+}
+	.twhofird.managed {
+    background: none;
+}
+.flex-grid.vps .onefird{
+    width: 100% !important;border-top: solid 1px #dadada; min-width:1px;
+    
+    background: #f1f1f1;
+}
+.vpsprice {
+    background: #1782ce;
+}
+h6,
+.flex-grid.vps hr,
+
+.loc {display:none}
+.flex-grid.vps ul {
+    width: 96%;
+   
+}
+.vpstitle.hide {
+	display: block;
+	background-color: #3a4b8c;
+	color: #fff;
+	text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    background-image: url(../images/managed2.png);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+       padding-top: 54px;
+    padding-bottom: 25px;
+    font-size: 39px;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+#countrytabs {
+    display: none;
+}
+.twhofird.managed {
+    padding-top: 0;
+}
+.tabcontent {
+    display: block !important;
+}
+.vpsprice {width:87%; padding:3%; margin:10px auto}
+}
+@media screen and (max-width: 400px){.details {
+    display: block;
+    text-align: center;
+}
+a.greenbutton.yellow {
+    display: block !important;
+    float: none;
+    text-align: center;
+}}

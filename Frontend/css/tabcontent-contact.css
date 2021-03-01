@@ -1,0 +1,219 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+padding:  0;
+margin: 0;
+ 
+ width:100%;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+.spacer {
+  height: 30px;
+    width: 100%;
+    clear: both;
+    border-bottom: solid 5px #e0b902;
+}
+.shadetabs li  {
+    font-size: 30px;
+    font-family: proxima-light;
+    display: block;
+    margin: 0;
+    width: calc(34% - 37px);
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 42px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+.shadetabs li a,.shadetabs li a:visited,.shadetabs li a:hover {
+   text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0px;
+    margin-right: 0;
+    color: #2d2b2b;
+    background: #f6f6f6;
+    display: block;
+    padding-left: 58px;
+    padding-bottom: 60px;
+    padding-top: 45px;
+}
+
+ #countrytabs hr {
+    width: 37px;
+    margin: 20px 0 15px 1px;
+    background: #55c252; height:2px
+}
+
+.shadetabs li a:hover{
+ background: #ededed;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+background: #e0b902;
+    color: #fff;
+    display: block;
+    padding-left: 58px;
+    padding-bottom: 60px;
+    padding-top: 45px;
+}
+
+.shadetabs li a.selected:after{ 
+width: 0;
+    height: 0;
+    z-index: 2;
+    content: " ";
+    display: block;
+    border: 25px solid;
+    border-color: #e0b902 transparent transparent;
+    margin: 0 auto;
+    position: absolute;
+    left: 16%;
+    top: 271px;} 
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+} 
+
+
+.tabcontent{
+display:none;
+}
+li.first a,li.first {
+    
+}
+ li.lastx{margin-right:0}
+li.lastx, li.lastx a {
+  
+}
+.flex-grid.vps .onefird, .flex-grid.vps .twhofird  { background-color:#fff; border:0}
+
+.flex-grid.vps {border:solid 1px #d6cece;  }
+.tabcontent {
+    padding: 0 3px;
+}
+/*vps specs*/
+.flex-grid.vps ul {
+   width: 42%;
+    float: left;
+    margin: 20px 2% 10px 2%;
+}
+.flex-grid.vps ul li {
+	background-color: #f3f3f3;
+	background-image: url(../images/ok.png);
+	background-repeat: no-repeat;
+	background-position: 15px 10px;
+	padding-left: 45px;
+	padding-top:10px; padding-bottom:10px;
+	border-bottom: solid 2px #e3e3e3;
+	margin-bottom: 10px;
+	 
+}
+.flex-grid.vps .onefird {
+    background-color: #3a4b8c;width: 34%;color:#fff;min-width: 405px
+}
+.twhofird.managed {
+	background-image: url(../images/managedlabel.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.icon {
+	background-image: url(../images/cart.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 60px;
+	width: 64px;
+	background-position: left top; position:relative; right:20px;    margin-top: 2px;
+}
+li .selected .icon {
+	background-position: left bottom;
+}
+li .selected hr {
+	background: #fff !important;
+}
+.icon.gear {
+	background-image: url(../images/gear.png);
+	height: 61px;
+	width: 61px;right: 12px;    margin-bottom: 0; margin-top: 1px;
+}
+.icon.sos {
+	background-image: url(../images/sos.png);
+	height: 56px;
+	width: 59px;   margin-top: 6px;
+    right: 13px;
+}
+.tabcontent .twhofird {
+    width: 67%;
+}
+.supp {
+    text-align: left;
+    padding: 30px 20px;
+}
+@media screen and (max-width: 1100px){
+	.shadetabs li {
+    font-size: 26px;margin-right: 20px;
+    width: calc(34% - 28px);}
+	.shadetabs li a.selected,.shadetabs li a, .shadetabs li a:visited, .shadetabs li a:hover {
+    
+    padding-left: 40px;
+    
+}
+}
+@media screen and (max-width: 960px){
+
+.shadetabs li {
+    font-size: 22px;margin-right: 10px;
+    line-height: 26px;width: calc(34% - 18px);
+}
+.shadetabs li a.selected:after {display:none}
+}
+
+@media screen and (max-width: 1023px){
+
+.flex-grid.vps ul {
+  
+}
+}
+@media screen and (max-width: 800px){
+	
+.flex-grid.vps ul {
+    width: 96%;
+   
+}
+.set {
+    text-align: center;
+}
+.icon, #countrytabs hr, .shadetabs li br,.hdm {
+    display:none !important
+}
+.twhofird.managed {
+    padding-top: 0;
+}
+
+.shadetabs li {
+    width: 100%;
+    float: none;
+    margin: 2px 0;
+    padding: 0;
+}
+.shadetabs li a.selected, .shadetabs li a, .shadetabs li a:visited, .shadetabs li a:hover {
+padding: 10px 20px
+}
+#contact .onefird,#contact .twhofird {
+    width: 100%;
+}
+#contact h2 {
+   text-align:center
+}
+}
+@media screen and (max-width: 600px).set a {
+    display: block;
+    margin-bottom: 5px;
+}}
+

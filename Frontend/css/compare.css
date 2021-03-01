@@ -1,0 +1,351 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+padding:  0;
+margin: 0;
+ 
+ width:100%;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+.spacer {
+    height: 17px;
+    width: 100%;
+    clear: both;
+}
+.shadetabs li {
+    display: block;
+    margin: 0;
+    width: 33%;
+    float: left;
+    border-right: 0;
+    text-align: center;
+   
+}
+.shadetabs li a,.shadetabs li a:visited,.shadetabs li a:hover {
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+   padding: 20px 0px;
+    margin-right: 0;
+    color: #2d2b2b;
+    display: block; text-decoration:underline
+    
+}
+
+.tabcontent h2 {
+    text-align: center;
+    padding: 0px 0 30px 0;
+    display: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.shadetabs li a:hover{
+ background: #ededed;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+ background:  #1782ce; 
+ color:#fff;    
+ text-decoration: none;
+}
+
+.shadetabs li a.selected:after{ 
+width: 0;
+    height: 0;
+    z-index: 2;
+    content: " ";
+    display: block;
+   
+    border-color: #fff transparent transparent;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: 0px;
+	border-right: 20px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 20px solid transparent;} 
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+} 
+
+.onefird, .twhofird {
+    border-bottom: solid 0px #e5e5e5;
+}
+.tabcontent{
+display:none;
+}
+ 
+.tabcontent {
+    padding: 50px 0;
+}
+.tabcontent .onefird p {
+    padding: 0 40px 20px 0px;
+    
+    line-height: 1.7em;
+}
+.tabcontent .fa {
+    color: #1782ce;
+    font-size: 1.2em;
+}
+div#country1 b {
+    display: inline-block;
+    padding-left: 8px;
+}
+#dedislider .tabcontent .fa {
+    color: #333;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+ @media screen and (max-width: 800px){
+	div#country1 {
+    text-align: center;
+}
+.tabcontent .fa,#dedislider .tabcontent .fa {
+    display: block;
+    font-size: 2em;  padding-right:0;
+}
+.tabcontent .onefird p {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+#hostingdetails {
+    display: none;
+}
+.twhofird.managed {
+    padding-top: 0;
+}
+.tabcontent {
+    display: block !important;
+}
+.vpsprice {width:87%; padding:3%; margin:10px auto}
+.tabcontent h2 {
+    
+    display: block;
+}
+#country2 {
+    display: none !important;
+}
+#dedislider #country2 {
+    display: block !important;
+}
+.tabcontent {
+    padding: 20px 0;
+}
+#faq {
+    padding-bottom: 30px;
+}
+#dedislider .tabcontent .onefird p {
+    padding: 0 0 20px 0px;
+    line-height: 1.7em;
+}
+ul.addons {
+    margin: 0 auto;
+}
+li.titad {
+    display: block;
+}
+}
+ 
+ 
+ /* TABLE*/
+ 
+  .comparison {
+    border: 1px solid #1782CE;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0; margin:0 auto
+  }
+
+  .comparison tr {
+  /*  border: 1px solid #ddd;*/
+  /*  padding: 5px;*/
+  }
+    .comparison td {
+   border: 1px solid #dadada;
+    
+  }
+.comparison thead tr th{
+    border: 0px solid #4668CB;
+     
+  }
+.comparison tbody tr td img {
+    position: relative;
+    top: 5px;
+}
+
+  .comparison th, .comparison td {
+    padding:  5px 10px; text-align:center;  width:20%;vertical-align: middle;
+    
+  }
+span.feat {
+    font-size: 16px;
+}
+ .comparison th {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #1782ce;
+    color: #fff;
+}
+.fcc, .fccx {
+    text-align: left !important;
+    background-color: #f5f5f5;
+    /* color: #fff; */
+    overflow: hidden;
+    /* border: 1px solid #516BB2!important; */
+}
+#pop1 h1, #pop2 h1{display:none}
+
+.comparison tbody tr td .goldmini 
+{height: 36px;
+    line-height: 36px;
+    background-position: left bottom;
+    margin-top: 0;  display:inline-block; width:auto
+}
+.comparison td.fccx {
+       
+    background-color: #48BD82;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-family: proximabold;
+    border: solid 1px #48BD82 !important;
+  
+    }
+	#pop1 h2, #pop2 h2{display: block;
+    background-color: #48BD82;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    width: 98%;
+    line-height: 48px;
+    margin: 0 auto;
+    text-transform: uppercase;}
+  @media screen and (max-width: 960px) {
+
+   .comparison {
+      border: 0;
+    }
+
+  .comparison thead {
+      display: none;
+    }
+
+.comparison tr {
+     
+      display: block; border:0;
+      
+    }
+
+ .comparison td {
+      display: block;
+    text-align: right;
+    font-size: 16px !important;
+    border-bottom: 1px solid #dadada;
+    border-top: 0;
+    width: auto;
+    }
+.comparison td.fcc, .comparison td.fccx {
+         background-color: #1782ce;
+    color: #fff;
+    font-size: 0.8em;
+    }
+	
+	#pop1 h1, #pop2 h1{display: block;
+    background-color: #48BD82;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    width: 98%;
+    line-height: 48px;
+    margin: 0 auto;
+    text-transform: uppercase;}
+	
+ .comparison td:last-child {
+     
+    }
+
+  .comparison td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: normal;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    }
+	.feat {display:none}
+	#pop1 h2, #pop2 h2{display: none;}
+  }
+/*accordion*/
+button.accordion {
+	background-color:  #1782ce;font-size: 1em;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 99.666%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.2s;
+	border-bottom: solid 2px #fff;
+}
+
+button.accordion.active, button.accordion:hover {
+	background-color: #65bd25;
+}
+
+button.accordion:after {
+	content: '\02795';
+	color: #fff;
+	float: right;
+	margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+	padding: 0 18px;
+ 
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+}
+
+div.panel.show {
+	opacity: 1;
+	max-height: 500px;
+	padding: 20px;
+}
+#faq {
+	 
+	padding-bottom:  0px;
+}
+#faq h1 {
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 2.8em;
+}
+#faq .half .panel ul li {
+	background-image: url(../images/ok.png);
+	background-repeat: no-repeat;
+	background-position: left 12px;
+	padding-left: 25px;
+}
+
+i.fa.fa-times {
+    color: #e25656;
+}

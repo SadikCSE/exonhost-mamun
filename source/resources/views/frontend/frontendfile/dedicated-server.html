@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Fully Managed Dedicated Server | SSD Dedicated Server | Dedicated Hosting - ExonHost</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="css/mobile.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png"  href="images/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+ 	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+      <!-- saw table -->
+          <link rel="stylesheet" href="dist/tablesaw.css">
+
+	<script src="dist/dependencies/jquery.js"></script>
+	<script src="dist/tablesaw.js"></script>
+	<script src="dist/tablesaw-init.js"></script>
+	<script>
+	$(function() {
+		$( "#custom-sort" ).data( "tablesaw-sort", function( ascending ) {
+			return function( a, b ) {
+				// a.cell
+				// a.element
+				// a.rowNum
+				var yearA = a.cell.split( "/" ),
+					yearB = b.cell.split( "/" );
+
+				if( ascending ) {
+					return parseInt( yearA[ 1 ], 10 ) - parseInt( yearB[ 1 ], 10 );
+				} else {
+					// descending
+					return parseInt( yearB[ 1 ], 10 ) - parseInt( yearA[ 1 ], 10 );
+				}
+			};
+		});
+	});
+	</script>
+    <!-- end saw table -->
+</head>
+
+<body>
+<!--top navbar -->
+<div id="topbar">
+<ul>
+<li class="hide"><a href="index.html">Home</a></li>
+<li class="nopad hide"><a href="http://blog.exonhost.com">Blog</a></li>
+<li class="topright tic4 hide"><a href="about.html">About</a></li>
+<li class="topright tic3 hide"><a href="#">Affiliates</a></li>
+<li class="topright tic2"><a href="tel:+01978-992200"><img src="images/tic2.png"  alt="Call Us" />01978-992200</a></li>
+<li class="topright tic2"><a href="tel:+09666-744755"><img src="images/tic2.png"  alt="Call Us" />09666-744755</a></li>
+</ul></div><div class="clear"></div>
+<!--end top navbar -->
+
+<!--main navbar -->
+<div id="navbar">
+<div class="content">
+<div class="logo"><a href="index.html"><img src="images/logo.png"   alt="ExonHost" /></a></div>
+<ul id="menuprincipal">
+<li class="thissection"><a href="web-hosting.html"><span class="hideph">Our </span>Services</a></li>
+<li><a href="contact.html">Support</a></li>
+<li class="last"><a href="https://clients.exonhost.com/clientarea.php">Client Area</a></li>
+</ul>
+</div>
+</div><div class="clear"></div>
+<!--end main navbar -->
+
+<!--mobile menu -->
+<div class="white">
+<div class="content">
+<nav class="clearfix">
+  <ul class="clearfix">
+    <li><a href="web-hosting.html">Web Hosting</a></li>
+    <li><a href="reseller-hosting.html">Reseller<span class="mobonly">s</span> <span class="hidetablet">Hosting</span></a></li>
+    <li><a href="ssd-vps.html">Virtual Servers</a></li>
+    <li><a href="dedicated-server.html"><b>Dedicated Servers</b></a></li>
+    <li><a href="https://clients.exonhost.com/domain/?a=add&domain=register">Domain<span class="mobonly">s</span> <span class="hidetablet">Names</span></a></li>
+    <li><a href="https://clients.exonhost.com/index.php?rp=/store/ssl-certificates">SSL<span class="mobonly">s</span> <span class="hidetablet">Certificate</span></a></li>  
+  </ul>
+  <a href="#" id="pull">Menu</a>
+</nav></div></div><div class="clear"></div>
+<!--end mobile menu -->
+
+
+<!--banner. No label? Add 26px padding with nolabel class -->
+
+<div class="blue banner innerpage"><div id="gradient"><div class="content">
+<span class="labelred">Fully Managed</span>
+<h1>Dedicated Servers</h1>
+<div class="breadcrumb"><a href="index.html">home</a><span class="devider">&nbsp; /  &nbsp;</span><span>services: dedicated servers</span></div>
+</div></div></div>
+<!--end banner -->
+
+
+<!--plans /tab content -->
+
+<div class="white"> 
+<div class="content" id="dedicated-servers-available"> 
+
+<!--SAW TABLE -->
+ <!-- single servers -->
+                <h3>Single CPU Servers <b class="grey">Sort a list of servers by clicking on the column header</b></h3>
+              
+              <table class="tablesaw" data-tablesaw-sortable data-tablesaw-sortable-switch>
+		  <thead>
+		    <tr>
+		      
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Server Model</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Speed</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Memory</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Hard Drives</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Bandwidth</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Price</th>
+	        </tr>
+  </thead>
+		  <tbody>
+		    <tr>
+		     
+		      <td class="leftal"><span class="title  intel">Intel Xeon E3-1240 v5 4 Cores @ 3.5 Ghz</span></td>
+		      <td>4 x 3.5 GHz</td>
+		      <td>16 GB DDR4 ECC</td>
+		      <td>2x500 GB SSD</td>
+		      <td>10 TB</td>
+		      <td><div class="price">$169.00<a class="greenbutton" href="https://clients.exonhost.com/cart.php?a=add&pid=88">Configure</a></div></td>
+	        </tr>
+		    <tr>
+		    
+		      <td class="leftal"><span class="title intel">Intel Xeon E3-1240 v6 4 Cores @ 3.7 Ghz</span></td>
+		      <td>4 x 3.7 GHz</td>
+			  <td>16 GB DDR4 ECC</td>
+		      <td>2x500 GB SSD</td>
+		      <td>10 TB</td>
+		     <td><div class="price">$179.00<a class="greenbutton" href="https://clients.exonhost.com/cart.php?a=add&pid=130">Configure</a></div></td>
+	        </tr>
+
+             <tr>
+		    
+		      <td class="leftal"><span class="title intel">Intel Xeon E5 1650 V4 6 Cores @ 3.6 Ghz</span></td>
+		      <td>6 x 3.6 GHz</td>
+		      <td>32 GB DDR4 ECC</td>
+		      <td>2x500 GB SSD</td>
+		      <td>10 TB</td>
+		     
+		     <td><div class="price">$250.00<a class="greenbutton" href="https://clients.exonhost.com/cart.php?a=add&pid=132">Configure</a></div></td>
+	        </tr>
+
+		 
+  </tbody>
+</table>
+    <!-- end single servers -->
+        <!-- dual  servers -->
+                <h3>Dual CPU Servers <b class="grey">Sort a list of servers by clicking on the column header</b></h3>
+              
+                <table class="tablesaw" data-tablesaw-sortable data-tablesaw-sortable-switch>
+		  <thead>
+		    <tr>
+		      
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Server Model</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Speed</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Memory</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Hard Drives</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Bandwidth</th>
+		      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Price</th>
+	        </tr>
+  </thead>
+		  <tbody>
+		    <tr>
+		     
+		      <td class="leftal"><span class="title  intel">Dual Intel Xeon E5 2620 v4 16 Cores @ 2.1 Ghz</span></td>
+		      <td>16 x 2.1 GHz</td>
+		      <td>32 GB DDR4 ECC</td>
+		      <td>2x500 GB SSD</td>
+		      <td>10 TB</td>
+		      <td><div class="price">$289.00<a class="greenbutton" href="https://clients.exonhost.com/cart.php?a=add&pid=171">Configure</a></div></td>
+	        </tr>
+		    <tr>
+		    
+		      <td class="leftal"><span class="title intel">Dual Intel Xeon E5 2630 v4 16 Cores @ 2.2 Ghz</span></td>
+		      <td>20 x 2.2 GHz</td>
+			  <td>32 GB DDR3 ECC</td>
+		      <td>2x500 GB SSD</td>
+		      <td>10 TB</td>
+		     <td><div class="price">$345.00<a class="greenbutton" href="https://clients.exonhost.com/cart.php?a=add&pid=92">Configure</a></div></td>
+	        </tr>
+		 
+  </tbody>
+</table>
+    <!-- end dual  servers -->
+<!--END TABLEs SAW -->
+</div>
+</div>
+
+
+
+
+</div></div>
+<!--end plans -->
+
+<!--available os -->
+<div class="white">
+<div class="content" id="oslist">
+<b>Featured Operating Systems</b>
+<hr>
+<span><img src="images/os1.png"  alt=""></span>
+<span><img src="images/os2.png"  alt=""></span>
+<span><img src="images/os3.png"  alt=""></span>
+<span><img src="images/os4.png"  alt=""></span>
+<span><img src="images/os5.png"  alt=""></span>
+<span><img src="images/os6.png"  alt=""></span>
+<span><img src="images/os7.png"  alt=""></span>
+<span><img src="images/os8.png"  alt=""></span>
+<span><img src="images/os9.png"  alt=""></span>
+<span><img src="images/os10.png"  alt=""></span>
+
+</div>
+</div>
+<!--end available os -->
+
+<!-- silver 4 boxes -->
+<div class="blue lightsilver" id="bonuses">
+<div class="content">
+
+<h1>All Dedicated Servers Included</h1>
+<div class="flex-grid">
+<div class="quart"><h3><img src="images/dedi1.png"  alt="Cloud Hosting"><hr>DDOS Protection</h3><p>Protection against all known attacks up to 20 Gbps, our network protects from over 95% of the most common DDoS attacks </p></div>
+<div class="quart"><h3><img src="images/dedi2.png"  alt="Dedicated Servers"><hr>Fully Managed</h3><p>We run your server so you can run your business. This means that we provide full support and management for your server. </p></div>
+<div class="quart"><h3><img src="images/dedi3.png"  alt="Data Backup"><hr>Free cPanel/WHM</h3><p>All our Servers come with a cPanel/WHM Installed and Configured and included cPanel license at no additional cost. </p></div>
+<div class="quart"><h3><img src="images/dedi4.png"  alt="Domane Names"><hr>Full Root Access</h3><p>The full power of the server! Having root access to the server gives you the ability to take full control of your server. </p></div>
+ 
+</div>
+
+</div>
+</div>
+<!-- end silver 4 boxes -->
+<!-- map -->
+<div id="map">
+<div id="mapimage"><img src="images/map-network.png" alt="Network map"><h3>Our locations</h3></div>
+</div>
+<!-- end map -->
+
+<!-- Global Footer -->
+<div class="white padseptente" >
+<div class="content">
+
+<!-- feautres -->
+<div class="flex-grid centered" style="margin-bottom:75px">
+<div class="onefird"><h3>99.9% Uptime Guarantee</h3><img src="images/uptime.png"  alt=""><p>We understand the uptime importance. We pledge to deliver in excess of 99.9% uptime, each and every month. </p></div>
+<div class="onefird"><h3>1 Gbps Dedicated Port</h3><img src="images/speed.png" width="94" height="94" alt=""><p>All of our server comes with 1Gbps Uplink Port as a standard.</p></div>
+<div class="onefird"><h3>Free 24/7 Professional Support</h3><img src="images/supp.png" width="94" height="94" alt=""><p>Our customer support is 24x7x365. With your hosting package you also gain 24x7 accesses to our expert support team.</p>
+  </div>
+</div>
+<!-- end feautres -->
+
+</div>
+</div>
+<div id="footertop">
+<div class="content">
+<ul>
+<li id="titf">Not sure where to start?</li><li id="angle"><a href="#"><img src="images/chat.png"  alt=""> Sales Live Chat</a></li><li id="ticket"><a href="https://clients.exonhost.com/submitticket.php?step=2&deptid=1"><img src="images/ticket.png"  alt=""> <span>Submit a </span>Support Ticket</a></li><li id="mailf"><a href="tel:+09666744755"><img src="images/call.png"  alt=""> Call Us</a></li><li id="emf"><a href="mailto:sales@exonhost.com"><img src="images/email.png"  alt=""> Email Us</a></li>
+</ul>
+</div>
+</div>
+<div id="footerlinks">
+<div class="content">
+<div id="newsletter"><h5>NEWSLETTER SIGNUP</h5>Signup to recieve latest promotions.
+<form>
+<input name="email" type="text" value="Email address" class="fem"><input name="Submit" type="button" value="Subscribe"  class="fbu" >
+</form>
+<div id="socilicons">
+<a href="https://www.facebook.com/exonhost" class="social"></a>
+<a href="https://www.twitter.com/exonhost" class="social twitter"></a>
+<a href="#" class="social gplus"></a>
+</div>
+</div>
+<ul id="footermap"> 
+<li>
+<h5>Services</h5>
+
+<a href="web-hosting.html">Web Hosting</a>
+<a href="reseller-hosting.html">Reseller Hosting</a>
+<a href="ssd-vps.html">Virtual Servers</a>
+<a href="dedicated-server.html">Dedicated Servers</a>
+</li>
+<li>
+<h5>Company</h5>
+
+<a href="about.html">About US</a>
+<a href="datacenter.html">Our Datacenters</a>
+<a href="http://blog.exonhost.com">Our Blog</a>
+<a href="https://clients.exonhost.com/contact.php">Contact US </a>
+
+</li>
+
+<li>
+<h5>Help</h5>
+
+<a href="https://clients.exonhost.com/index.php?rp=/knowledgebase">Knowledgebase</a>
+<a href="https://status.exonhost.com">Service Status</a>
+<a href="https://clients.exonhost.com/submitticket.php?step=2&deptid=1">Support Center</a>
+<a href="https://clients.exonhost.com/index.php?rp=/announcements">News &amp; Updates</a>
+</li>
+
+<li>
+<h5>Legal</h5>
+
+<a href="https://clients.exonhost.com/submitticket.php?step=2&deptid=4">Report Abuse</a>
+<a href="tos.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="tos.html">Acceptable Usages Policy</a>
+
+</li>
+
+</ul>
+<div class="clear"></div>
+<div class="copy"><div><a href="tos.html">Terms of Service</a>   |   <a href="privacy.html">Privacy Policy</a>   |  <a href="tos.html">SLA</a> &nbsp; <span><img src="images/card1.png"   alt="MasterCard"> <img src="images/card2.png"   alt="Visa"> <img src="images/card3.png"   alt="PayPal"></span></div>&copy; 2017 ExonHost. All rights reserved.</div>
+
+</div></div>
+
+<!-- End Global Footer -->
+
+  <!--Start of Help.com Live Chat Script-->
+  <script>
+    window.Helpdotcom=window.Helpdotcom||function(a){window.Helpdotcom.q.push(a)},window.Helpdotcom.q=[];var d=document,s=d.createElement("script");s.type="text/javascript",s.async=!0,s.src="//plugins.help.com/livechat.js",s.id="helpdotcom-script",s.setAttribute("data-org-id","ccc8aa75-311e-49c7-88a8-8085df34d870"),s.setAttribute("data-widget-id","8f961332-cdd0-44f1-ae41-cae08e1645f1");var x=d.getElementsByTagName("script")[0];x.parentNode.insertBefore(s,x);
+  </script>
+  <!--End of Help.com Live Chat Script-->
+
+</body>
+</html>

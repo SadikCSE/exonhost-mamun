@@ -1,0 +1,6 @@
+[26-Dec-2020 11:57:05 UTC] PHP Warning:  require(/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34
+[26-Dec-2020 11:57:05 UTC] PHP Warning:  require(/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34
+[26-Dec-2020 11:57:05 UTC] PHP Fatal error:  require(): Failed opening required '/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34
+[26-Dec-2020 11:57:22 UTC] PHP Warning:  require(/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34
+[26-Dec-2020 11:57:22 UTC] PHP Warning:  require(/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34
+[26-Dec-2020 11:57:22 UTC] PHP Fatal error:  require(): Failed opening required '/home/ajkerdes/laravel.sadik.xyz/../vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajkerdes/laravel.sadik.xyz/index.php on line 34

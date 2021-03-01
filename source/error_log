@@ -1,0 +1,4 @@
+[26-Dec-2020 11:53:52 UTC] PHP Warning:  require_once(/home/ajkerdes/laravel.sadik.xyz/../bootstrap/app.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 47
+[26-Dec-2020 11:53:52 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ajkerdes/laravel.sadik.xyz/../bootstrap/app.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajkerdes/laravel.sadik.xyz/index.php on line 47
+[26-Dec-2020 11:53:55 UTC] PHP Warning:  require_once(/home/ajkerdes/laravel.sadik.xyz/../bootstrap/app.php): failed to open stream: No such file or directory in /home/ajkerdes/laravel.sadik.xyz/index.php on line 47
+[26-Dec-2020 11:53:55 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ajkerdes/laravel.sadik.xyz/../bootstrap/app.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/ajkerdes/laravel.sadik.xyz/index.php on line 47
